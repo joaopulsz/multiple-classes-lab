@@ -16,7 +16,7 @@ public class MainTest {
         this.gallery = new Gallery("Gallery", 400);
     }
 
-    @Test // expected test to succeed
+    @Test
     public void canBuyArtwork() {
         //Given
         gallery.addArtwork(artwork);
@@ -37,17 +37,18 @@ public class MainTest {
 
     }
 
-    @Test // expected test to fail
-    public void cantBuyArtwork() {
+    @Test
+    public void canBuyArtwork__false() {
         //Given
         gallery.addArtwork(artwork);
+        customer.setWallet(0);
 
         //When
         customer.buyArtwork(gallery, artwork);
 
         //Then
-        float tillExpected = 500;
-        float walletExpected = 40000;
+        float tillExpected = 400;
+        float walletExpected = 0;
         assertThat(customer.getWallet()).isEqualTo(walletExpected);
         assertThat(gallery.getTill()).isEqualTo(tillExpected);
 

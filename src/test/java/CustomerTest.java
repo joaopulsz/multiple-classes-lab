@@ -7,9 +7,4 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class CustomerTest {
 
-//    @BeforeEach
-//    public void setUp() {
-//        this.name = "Someone";
-//
-//    }
 }

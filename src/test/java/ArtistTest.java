@@ -6,22 +6,22 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class ArtistTest {
     private Artist artist;
 
-//    @BeforeEach
-//    public void setUp(){
-//        this.artist = new Artist("Someone");
-//    }
-//
-//    @Test
-//     //Given
-//     artist.setName("Random");
-//     artist.getName();
-//
-//     //When
-//     String actual = name.toLowerCase();
-//
-//     //Then
-//     String expected = "someone";
-//     assertThat(actual).isEqualTo(expected);
-//
-//    }
+    @BeforeEach
+    public void setUp(){
+        this.artist = new Artist("Someone");
+    }
+
+    @Test
+    public void canSetName() {
+     //Given
+     artist.setName("Random");
+
+
+     //When
+     String newName = artist.getName();
+
+     //Then
+     assertThat(newName).isEqualTo("Random");
+
+    }
 }
