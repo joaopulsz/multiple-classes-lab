@@ -23,12 +23,14 @@ public class Main {
 
         System.out.println("The total value of all the gallery's artwork is " + impossibleArtwork.stockTake());
 
-        impossibleArtwork.collection.forEach(artwork -> {
-            System.out.println("Impossible Artwork's collection includes " + artwork.getTitle());
+        System.out.println("Impossible Artwork's collection includes:");
+        impossibleArtwork.getCollection().forEach(artwork -> {
+            System.out.println(artwork.getTitle());
         });
 
-        mary.collection.forEach(artwork -> {
-            System.out.println("Mary's collection includes " + artwork.getTitle());
+        System.out.println("Mary's collection includes:");
+        mary.getCollection().forEach(artwork -> {
+            System.out.println(artwork.getTitle());
         });
 
     }

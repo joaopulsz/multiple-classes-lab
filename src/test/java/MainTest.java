@@ -32,8 +32,8 @@ public class MainTest {
 
         int galleryCollectionExpected = 0;
         int customerCollectionExpected = 1;
-        assertThat(gallery.collection.size()).isEqualTo(galleryCollectionExpected);
-        assertThat(customer.collection.size()).isEqualTo(customerCollectionExpected);
+        assertThat(gallery.getCollection().size()).isEqualTo(galleryCollectionExpected);
+        assertThat(customer.getCollection().size()).isEqualTo(customerCollectionExpected);
 
     }
 
@@ -54,8 +54,8 @@ public class MainTest {
 
         int galleryCollectionExpected = 1;
         int customerCollectionExpected = 0;
-        assertThat(gallery.collection.size()).isEqualTo(galleryCollectionExpected);
-        assertThat(customer.collection.size()).isEqualTo(customerCollectionExpected);
+        assertThat(gallery.getCollection().size()).isEqualTo(galleryCollectionExpected);
+        assertThat(customer.getCollection().size()).isEqualTo(customerCollectionExpected);
 
     }
 }

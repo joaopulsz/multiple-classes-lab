@@ -4,7 +4,7 @@ public class Customer {
 
     private String name;
     private float wallet;
-    public ArrayList<Artwork> collection;
+    private ArrayList<Artwork> collection;
 
     public Customer(String name, float wallet){
         this.name = name;
@@ -26,6 +26,10 @@ public class Customer {
 
     public float getWallet() {
         return wallet;
+    }
+
+    public ArrayList<Artwork> getCollection() {
+        return this.collection;
     }
 
     public void buyArtwork(Gallery gallery, Artwork artwork){

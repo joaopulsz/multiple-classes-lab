@@ -4,7 +4,7 @@ public class Gallery {
 
     private String name;
     private float till;
-    public ArrayList<Artwork> collection;
+    private ArrayList<Artwork> collection;
 
     public Gallery(String name, float till){
         this.name = name;
@@ -26,6 +26,10 @@ public class Gallery {
 
     public void setTill(float till) {
         this.till = till;
+    }
+
+    public ArrayList<Artwork> getCollection() {
+        return this.collection;
     }
 
     public void addArtwork(Artwork artwork) {
